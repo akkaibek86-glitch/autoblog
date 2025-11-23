@@ -1,1 +1,145 @@
-<html><head><meta charset='utf-8'><title>İletişim</title><link rel='stylesheet' href='assets/styles.css'></head><body><header class='site-header'><div class='container'><h1 class='logo'><a href='index.html'>Atasayar Oto</a></h1><nav class='main-nav'><a href='index.html'>Ana Sayfa</a><a href='about.html'>Hakkında</a><a href='blog.html'>Blog</a><a href='contact.html'>İletişim</a></nav></div></header><main class='container'><h2>İletişim</h2><p>Bize ulaşmak için: info@atasayaroto.com</p></main><footer class='site-footer'><div class='container'><small>© 2025 Atasayar Oto</small></div></footer></body></html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Atasayar Oto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>🚗 Atasayar Oto</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="reviews.html">İncelemeler</a></li>
+                    <li><a href="news.html">Haberler</a></li>
+                    <li><a href="tips.html">İpuçları</a></li>
+                    <li><a href="contact.html" class="active">İletişim</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Bizimle İletişime Geçin</h2>
+            <p>Sorularınız, önerileriniz ve geri bildirimleriniz için</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section>
+            <div class="contact-form">
+                <h3 style="margin-bottom: 1.5rem; text-align: center;">İletişim Formu</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Adınız Soyadınız *</label>
+                        <input type="text" id="name" name="name" required placeholder="Ahmet Yılmaz">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-posta Adresiniz *</label>
+                        <input type="email" id="email" name="email" required placeholder="ornek@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefon Numaranız</label>
+                        <input type="tel" id="phone" name="phone" placeholder="0555 555 55 55">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Konu *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Konu başlığı">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mesajınız *</label>
+                        <textarea id="message" name="message" required placeholder="Mesajınızı buraya yazın..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">Gönder</button>
+                </form>
+            </div>
+        </section>
+
+        <section style="margin-top: 3rem;">
+            <h2 style="text-align: center;">Diğer İletişim Yolları</h2>
+            <div class="grid">
+                <article class="card">
+                    <div class="card-image">📧</div>
+                    <h3>E-posta</h3>
+                    <p>iletisim@atasayaroto.com</p>
+                    <p>Sorularınız için 24 saat içinde yanıt veriyoruz.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">📱</div>
+                    <h3>Sosyal Medya</h3>
+                    <p>Instagram: @atasayaroto</p>
+                    <p>Twitter: @atasayaroto</p>
+                    <p>Facebook: /atasayaroto</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">💼</div>
+                    <h3>İş Birlikleri</h3>
+                    <p>reklam@atasayaroto.com</p>
+                    <p>Reklam ve iş birliği teklifleri için özel ekibimizle iletişime geçin.</p>
+                </article>
+            </div>
+        </section>
+
+        <section style="margin-top: 3rem;">
+            <h2 style="text-align: center;">Sık Sorulan Sorular</h2>
+            <div class="post-list">
+                <article class="post-item">
+                    <h3>Araç inceleme talebi nasıl yapabilirim?</h3>
+                    <p>Yukarıdaki iletişim formu üzerinden veya e-posta ile bize ulaşabilirsiniz. İncelemesini istediğiniz aracın marka ve modelini belirtin.</p>
+                </article>
+
+                <article class="post-item">
+                    <h3>Test sürüşü videoları var mı?</h3>
+                    <p>Şu anda sadece yazılı içerik üretiyoruz. Ancak yakın gelecekte video içeriklere de başlamayı planlıyoruz.</p>
+                </article>
+
+                <article class="post-item">
+                    <h3>Araç alım-satım danışmanlığı veriyor musunuz?</h3>
+                    <p>Doğrudan danışmanlık hizmeti vermiyoruz, ancak sitemizde yer alan kapsamlı rehberler ve ipuçları ile size yardımcı olmaya çalışıyoruz.</p>
+                </article>
+
+                <article class="post-item">
+                    <h3>Reklamlarınızda yer almak istiyorum, ne yapmalıyım?</h3>
+                    <p>Reklam ve sponsorluk teklifleri için reklam@atasayaroto.com adresine e-posta gönderebilirsiniz.</p>
+                </article>
+
+                <article class="post-item">
+                    <h3>Yazar kadrosuna nasıl katılabilirim?</h3>
+                    <p>Otomotiv konusunda yazı yazmak istiyorsanız, özgeçmişiniz ve örnek yazılarınızla birlikte iletisim@atasayaroto.com adresine başvurabilirsiniz.</p>
+                </article>
+            </div>
+        </section>
+
+        <section style="margin-top: 3rem; text-align: center; padding: 2rem; background: white; border-radius: 10px;">
+            <h3>Bültenimize Katılın</h3>
+            <p>En son araç incelemeleri ve otomotiv haberlerinden haberdar olun!</p>
+            <form action="#" method="POST" style="max-width: 500px; margin: 1.5rem auto;">
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <input type="email" placeholder="E-posta adresiniz" required style="flex: 1; min-width: 200px; padding: 0.8rem; border: 2px solid #ddd; border-radius: 5px;">
+                    <button type="submit" class="btn">Abone Ol</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Atasayar Oto. Tüm hakları saklıdır.</p>
+            <p>atasayaroto.com</p>
+        </div>
+    </footer>
+</body>
+</html>
