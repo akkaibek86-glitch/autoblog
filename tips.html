@@ -120,32 +120,96 @@
         <section>
             <h2>Acil Durum Kılavuzu</h2>
             <div class="post-list">
-                <article class="post-item">
-                    <h3>🔴 Motor Aşırı Isınıyorsa</h3>
-                    <p>1. Hemen güvenli bir yere çekin ve motoru kapatın</p>
-                    <p>2. Kaputu açın (dikkat! Sıcak olabilir)</p>
-                    <p>3. Radyatör suyunu kontrol edin (motor soğuduktan sonra)</p>
-                    <p>4. Su eklerken motoru çalıştırın</p>
-                    <p>5. Sorun devam ederse çekici çağırın</p>
-                </article>
+<!-- Существующие советы в обновленной разметке -->
+<article class="advice-card" id="motor-overheating">
+    <h3 class="advice-title warning">🔴 Motor Aşırı Isınıyorsa</h3>
+    <ol class="advice-steps">
+        <li>Hemen güvenli bir yere çekin ve motoru kapatın</li>
+        <li>Kaputu açın (<strong>dikkat!</strong> Sıcak olabilir)</li>
+        <li>Radyatör suyunu kontrol edin (motor soğuduktan sonra)</li>
+        <li>Su eklerken motoru çalıştırın</li>
+        <li>Sorun devam ederse çekici çağırın</li>
+    </ol>
+</article>
 
-                <article class="post-item">
-                    <h3>🔴 Lastik Patlarsa</h3>
-                    <p>1. Panik yapmayın, direksiyonu sıkı tutun</p>
-                    <p>2. Fren yerine gaza hafifçe basarak hızınızı kontrollü düşürün</p>
-                    <p>3. Güvenli bir yere park edin</p>
-                    <p>4. Reflektör yerleştirin</p>
-                    <p>5. Stepne takın veya yol yardım çağırın</p>
-                </article>
+<article class="advice-card" id="tire-burst">
+    <h3 class="advice-title warning">🔴 Lastik Patlarsa</h3>
+    <ol class="advice-steps">
+        <li>Panik yapmayın, direksiyonu sıkı tutun</li>
+        <li>Fren yerine gaza hafifçe basarak hızınızı kontrollü düşürün</li>
+        <li>Güvenli bir yere park edin</li>
+        <li>Reflektör yerleştirin</li>
+        <li>Stepne takın veya yol yardım çağırın</li>
+    </ol>
+</article>
 
-                <article class="post-item">
-                    <h3>🔴 Frenler Tutmuyorsa</h3>
-                    <p>1. Frene tekrar tekrar basın (pompalayın)</p>
-                    <p>2. Vitesi düşürün (motor freni)</p>
-                    <p>3. El frenini yavaşça çekin</p>
-                    <p>4. Kornaya basarak uyarı verin</p>
-                    <p>5. Güvenli bir çıkış noktası arayın</p>
-                </article>
+<article class="advice-card" id="brake-failure">
+    <h3 class="advice-title warning">🔴 Frenler Tutmuyorsa</h3>
+    <ol class="advice-steps">
+        <li>Frene tekrar tekrar basın (pompalayın)</li>
+        <li>Vitesi düşürün (motor freni)</li>
+        <li>El frenini yavaşça çekin</li>
+        <li>Kornaya basarak uyarı verin</li>
+        <li>Güvenli bir çıkış noktası arayın</li>
+    </ol>
+</article>
+
+<!-- Новые технические ситуации -->
+
+<article class="advice-card" id="battery-warning-light">
+    <h3 class="advice-title warning">🔴 Akü Uyarı Lambası Yanarsa</h3>
+    <ol class="advice-steps">
+        <li>Klima, radyo, ısıtma gibi elektrikli sistemleri kapatın</li>
+        <li>Motoru durdurmamaya özen gösterin (stop etmesini önleyin)</li>
+        <li>Marş dinamosu kayışını kontrol edin (görsel olarak)</li>
+        <li>En kısa sürede akü ve şarj sistemini kontrol ettirin</li>
+        <li>Eğer motor stop ederse, akü bitmeden çekici çağırın</li>
+    </ol>
+</article>
+
+<article class="advice-card" id="engine-oil-pressure">
+    <h3 class="advice-title warning">🔴 Motor Yağ Basınç Uyarısı Alırsanız</h3>
+    <ol class="advice-steps">
+        <li>Hemen motoru durdurun ve çalıştırmayın</li>
+        <li>Yağ seviyesini kontrol edin (motor soğuduktan sonra)</li>
+        <li>Yağ sızıntısı olup olmadığını kontrol edin</li>
+        <li>Yağ eksikse tamamlayın ve uyarı lambasının sönüp sönmediğine bakın</li>
+        <li>Uyarı devam ediyorsa, aracı çektirmeden sürmeyin</li>
+    </ol>
+</article>
+
+<article class="advice-card" id="check-engine-light">
+    <h3 class="advice-title caution">🟡 Check Engine (Motor Arıza) Lambası Yanarsa</h3>
+    <ol class="advice-steps">
+        <li>Araç performansında anormallik var mı kontrol edin</li>
+        <li>Yakıt kapağının sıkıca kapalı olduğundan emin olun</li>
+        <li>Araç titriyor veya güç kaybı varsa yavaşlayın</li>
+        <li>OBD-II scanner ile hata kodunu okuyun</li>
+        <li>En kısa sürede yetkili servise başvurun</li>
+    </ol>
+</article>
+
+<article class="advice-card" id="overheating-transmission">
+    <h3 class="advice-title warning">🔴 Şanzıman Aşırı Isınıyorsa</h3>
+    <ol class="advice-steps">
+        <li>Ani hızlanma ve yüksek devirden kaçının</li>
+        <li>Vites değiştirmeleri yumuşak yapın</li>
+        <li>Aracı güvenli bir yere çekip motoru durdurun</li>
+        <li>Şanzıman yağ seviyesini ve rengini kontrol edin</li>
+        <li>Soğuma sonrası sorun devam ederse servise götürün</li>
+    </ol>
+</article>
+
+<article class="advice-card" id="abs-failure">
+    <h3 class="advice-title caution">🟡 ABS Arıza Lambası Yanarsa</h3>
+    <ol class="advice-steps">
+        <li>Normal fren sisteminin çalıştığını unutmayın (acil durum freni)</li>
+        <li>Fren mesafesinin uzayabileceğini hesaba katın</li>
+        <li>Ani ve sert frenlemelerden kaçının</li>
+        <li>ABS sensör bağlantılarını kontrol edin (görsel olarak)</li>
+        <li>Fren performansını test ettikten sonra servise gidin</li>
+    </ol>
+</article>
             </div>
         </section>
 
