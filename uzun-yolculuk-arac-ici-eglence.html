@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzun Yolculuklarda Araç İçi Eğlence Sistemleri: 2025 Rehberi | Atasayar Oto</title>
+    <meta name="description" content="Uzun yolculuklar için araç içi eğlence sistemleri rehberi. Android Auto, Apple CarPlay, Netflix, Spotify, oyun konsolları ve çocuklar için aktiviteler. Modern teknolojilerle konforlu yolculuk.">
+    <meta name="keywords" content="araç içi eğlence, Android Auto, Apple CarPlay, araç içi sistem, uzun yolculuk, çocuk eğlencesi, araç teknolojisi, infotainment, Netflix araba">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .article-content h2 {
+            color: #1e3c72;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
+        }
+        
+        .article-content h3 {
+            color: #2a5298;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .system-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .system-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid transparent;
+        }
+        
+        .system-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+            border-color: #667eea;
+        }
+        
+        .system-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .feature-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin: 0.2rem;
+        }
+        
+        .age-group-section {
+            background: #f9f9f9;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .age-group-section h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        .tips-list {
+            background: #f0f7ff;
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 5px;
+        }
+        
+        .tips-list h4 {
+            color: #667eea;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        
+        .tips-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .tips-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.8rem;
+            position: relative;
+        }
+        
+        .tips-list li::before {
+            content: '🎯';
+            position: absolute;
+            left: 0;
+        }
+        
+        .comparison-boxes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .comparison-box {
+            background: white;
+            border: 3px solid #667eea;
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .comparison-box h4 {
+            color: #667eea;
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+        
+        .price-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: inline-block;
+            margin: 1rem 0;
+        }
+        
+        .pros-cons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .pros-box {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+        
+        .cons-box {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+        
+        .pros-box h4 {
+            color: #155724;
+            margin-top: 0;
+        }
+        
+        .cons-box h4 {
+            color: #721c24;
+            margin-top: 0;
+        }
+        
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .app-box {
+            background: white;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .app-box:hover {
+            border-color: #667eea;
+            transform: scale(1.05);
+        }
+        
+        .app-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+        
+        .highlight-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+        
+        .article-date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .safety-warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 5px;
+        }
+        
+        .safety-warning h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+        
+        .device-showcase {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>🚗 Atasayar Oto</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="reviews.html">İncelemeler</a></li>
+                    <li><a href="news.html">Haberler</a></li>
+                    <li><a href="tips.html" class="active">İpuçları</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container" style="padding-top: 2rem;">
+        <article class="article-content">
+            
+            <div class="article-date">📅 5 Aralık 2025 | ⏱️ 11 dakika okuma | 🎮 Teknoloji & Eğlence</div>
+            
+            
+            <h1>Uzun Yolculuklarda Araç İçi Eğlence Sistemleri: Kapsamlı Rehber</h1>
+            
+            
+            <img src="arac-ici-eglence.webp" alt="Araç İçi Eğlence Sistemleri - Modern Teknolojiler" class="hero-image">
+            <p><strong>Uzun yolculuklar</strong> ailenizle veya arkadaşlarınızla geçirdiğiniz güzel zamanlar olabilir. Ancak, özellikle çocuklarla seyahat ederken, yolculuğu eğlenceli hale getirmek için doğru araç içi eğlence sistemlerine ihtiyacınız var.</p>
+            
+            <p>2025 yılında, <strong>modern araç teknolojileri</strong> sayesinde yolculuklar artık çok daha konforlu ve eğlenceli. Android Auto, Apple CarPlay, akıllı ekranlar, oyun konsolları ve daha birçok seçenek sizleri bekliyor.</p>
+            <p>Bu rehberde, uzun yolculuklar için en iyi araç içi eğlence sistemlerini, uygulamaları, cihazları ve ipuçlarını detaylı olarak inceleyeceğiz.</p>
+            
+            <h2>Modern Araç İçi Eğlence Sistemleri</h2>
+            <div class="system-grid">
+                <div class="system-card">
+                    <span class="system-icon">🍎</span>
+                    <h3>Apple CarPlay</h3>
+                    <p>iPhone kullanıcıları için ideal entegrasyon. Siri ile sesli komutlar, müzik, navigasyon ve mesajlaşma.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="feature-badge">Kablosuz Bağlantı</span>
+                        <span class="feature-badge">Siri Desteği</span>
+                        <span class="feature-badge">Apple Music</span>
+                    </div>
+                </div>
+                <div class="system-card">
+                    <span class="system-icon">🤖</span>
+                    <h3>Android Auto</h3>
+                    <p>Android telefonlar için tasarlanmış sistem. Google Asistan, Google Maps ve binlerce uygulama desteği.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="feature-badge">Google Maps</span>
+                        <span class="feature-badge">Spotify</span>
+                        <span class="feature-badge">WhatsApp</span>
+                    </div>
+                </div>
+                <div class="system-card">
+                    <span class="system-icon">📺</span>
+                    <h3>Arka Koltuk Ekranları</h3>
+                    <p>Özellikle çocuklu aileler için vazgeçilmez. Film, dizi, oyun ve daha fazlası.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="feature-badge">Çift Ekran</span>
+                        <span class="feature-badge">HDMI Girişi</span>
+                        <span class="feature-badge">USB Şarj</span>
+                    </div>
+                </div>
+                <div class="system-card">
+                    <span class="system-icon">🎮</span>
+                    <h3>Oyun Konsolları</h3>
+                    <p>Nintendo Switch, PlayStation Portal gibi taşınabilir konsollar uzun yolculukların kurtarıcısı.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="feature-badge">Multiplayer</span>
+                        <span class="feature-badge">Taşınabilir</span>
+                        <span class="feature-badge">Pil Ömrü 5-8 saat</span>
+                    </div>
+                </div>
+                <div class="system-card">
+                    <span class="system-icon">🎵</span>
+                    <h3>Premium Ses Sistemleri</h3>
+                    <p>Bose, Bang & Olufsen, Harman Kardon gibi markaların yüksek kaliteli ses sistemleri.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="feature-badge">Surround Sound</span>
+                        <span class="feature-badge">Hi-Fi Kalite</span>
+                        <span class="feature-badge">Gürültü Engelleme</span>
+                    </div>
+                </div>
+                <div class="system-card">
+                    <span class="system-icon">📱</span>
+                    <h3>Tablet Montaj Sistemleri</h3>
+                    <p>iPad veya Android tabletlerinizi güvenli şekilde monte edin. Netflix, YouTube, oyunlar için ideal.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="feature-badge">360° Dönebilir</span>
+                        <span class="feature-badge">Sağlam Tutuş</span>
+                        <span class="feature-badge">Kolay Kurulum</span>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>En İyi Araç İçi Eğlence Uygulamaları</h2>
+            <h3>🎬 Video ve Dizi İzleme</h3>
+            <div class="app-grid">
+                <div class="app-box">
+                    <div class="app-icon">📺</div>
+                    <strong>Netflix</strong>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">İndirme özelliği ile çevrimdışı</p>
+                </div>
+                <div class="app-box">
+                    <div class="app-icon">▶️</div>
+                    <strong>YouTube</strong>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">Premium ile reklamsız</p>
+                </div>
+                <div class="app-box">
+                    <div class="app-icon">🎭</div>
+                    <strong>Disney+</strong>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">Çocuklar için ideal</p>
+                </div>
+                <div class="app-box">
+                    <div class="app-icon">🎪</div>
+                    <strong>Amazon Prime</strong>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">Geniş içerik kütüphanesi</p>
+                </div>
+                <div class="app-box">
+                    <div class="app-icon">📡</div>
+                    <strong>BluTV</strong>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">Türk dizileri</p>
+                </div>
+            </div>
+            <h3>🎵 Müzik ve Podcast</h3>
+            <div class="app-grid">
+                <div class="app-box">
+                    <div class="app-icon">🎧</div>
+                    <strong>Spotify</strong>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">70M+ şarkı</p>
+                </div>
+                <div class="app-box">
+                    <div class="app-icon">🎵</div>
+                    <strong>Apple Music</strong>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">Hi-Fi kalite</p>
+                </div>
+                <div class="app-box">
+                    <div class="app-icon">📻</div>
+                    <strong>YouTube Music</strong>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">Video + Müzik</p>
+                </div>
+                <div class="app-box">
+                    <div class="app-icon">🎙️</div>
+                    <strong>Storytel</strong>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">Sesli kitaplar</p>
+                </div>
+                <div class="app-box">
+                    <div class="app-icon">🎼</div>
+                    <strong>Fizy</strong>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">Türk müziği</p>
+                </div>
+            </div>
+            <h3>🎮 Oyunlar</h3>
+            <div class="app-grid">
+                <div class="app-box">
+                    <div class="app-icon">🕹️</div>
+                    <strong>Roblox</strong>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">Çocuklar için</p>
+                </div>
+                <div class="app-box">
+                    <div class="app-icon">🏎️</div>
+                    <strong>Asphalt 9</strong>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">Yarış oyunu</p>
+                </div>
+                <div class="app-box">
+                    <div class="app-icon">🧩</div>
+                    <strong>Candy Crush</strong>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">Bulmaca</p>
+                </div>
+                <div class="app-box">
+                    <div class="app-icon">⚔️</div>
+                    <strong>PUBG Mobile</strong>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">Aksiyon</p>
+                </div>
+                <div class="app-box">
+                    <div class="app-icon">🎯</div>
+                    <strong>Among Us</strong>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">Multiplayer</p>
+                </div>
+            </div>
+            
+            <h2>Yaş Gruplarına Göre Eğlence Önerileri</h2>
+            <div class="age-group-section">
+                <h3>👶 0-3 Yaş: Bebekler ve Küçük Çocuklar</h3>
+                <ul>
+                    <li><strong>Müzik:</strong> Bebek şarkıları, ninni koleksiyonları (Spotify, YouTube)</li>
+                    <li><strong>Sesli Oyuncaklar:</strong> Renkli ışıklı oyuncaklar</li>
+                    <li><strong>Animasyonlar:</strong> Pepee, Baby Shark, Cocomelon (kısa süreli)</li>
+                    <li><strong>Ayna Oyuncakları:</strong> Arka koltuğa monte edilebilir güvenli aynalar</li>
+                    <li><strong>Aktivite Kitapları:</strong> Kumaş kitaplar, renkli resimli kitaplar</li>
+                </ul>
+                <div class="tips-list" style="margin-top: 1rem;">
+                    <h4>💡 İpucu:</h4>
+                    <ul>
+                        <li>Her 1-2 saatte mola verin</li>
+                        <li>Ekran süresini minimum tutun</li>
+                        <li>Yumuşak oyuncakları tercih edin</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="age-group-section">
+                <h3>🧒 4-7 Yaş: Okul Öncesi ve İlkokul</h3>
+                <ul>
+                    <li><strong>Çizgi Filmler:</strong> Disney+, Netflix Kids, Rafadan Tayfa</li>
+                    <li><strong>Eğitici Oyunlar:</strong> ABC Mouse, Khan Academy Kids</li>
+                    <li><strong>Boyama Kitapları:</strong> Dijital ve fiziksel boyama kitapları</li>
+                    <li><strong>Tablet Oyunları:</strong> Toca Life, Minecraft, PBS Kids Games</li>
+                    <li><strong>Hikaye Okuması:</strong> Sesli masallar, interaktif kitaplar</li>
+                </ul>
+                <div class="tips-list" style="margin-top: 1rem;">
+                    <h4>💡 İpucu:</h4>
+                    <ul>
+                        <li>Ebeveyn kontrolü aktif edin</li>
+                        <li>Eğitici içerikleri tercih edin</li>
+                        <li>Oyun ve film arası denge kurun</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="age-group-section">
+                <h3>👦 8-12 Yaş: İlkokul ve Ortaokul</h3>
+                <ul>
+                    <li><strong>Oyun Konsolları:</strong> Nintendo Switch, oyun tabletleri</li>
+                    <li><strong>Filmler:</strong> Marvel, Harry Potter, animasyon filmleri</li>
+                    <li><strong>Müzik:</strong> Kendi çalma listelerini oluşturma</li>
+                    <li><strong>E-Kitaplar:</strong> Macera kitapları, bilim kurgu</li>
+                    <li><strong>Bilgi Yarışmaları:</strong> Kelime oyunları, bulmacalar</li>
+                </ul>
+                <div class="tips-list" style="margin-top: 1rem;">
+                    <h4>💡 İpucu:</h4>
+                    <ul>
+                        <li>Kardeşler arası oyunları teşvik edin</li>
+                        <li>Çevrimdışı içerik indirin</li>
+                        <li>Kulaklık kullanımını zorunlu tutun</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="age-group-section">
+                <h3>👨 13+ Yaş: Gençler ve Yetişkinler</h3>
+                <ul>
+                    <li><strong>Diziler:</strong> Netflix, Prime Video, Disney+ (tüm içerikler)</li>
+                    <li><strong>Podcast:</strong> Eğitim, komedi, true crime seriler</li>
+                    <li><strong>Sesli Kitaplar:</strong> Storytel, Audible</li>
+                    <li><strong>Müzik:</strong> Kişisel tercihler, playlist paylaşımı</li>
+                    <li><strong>Online Oyunlar:</strong> Multiplayer oyunlar (hotspot ile)</li>
+                </ul>
+                <div class="tips-list" style="margin-top: 1rem;">
+                    <h4>💡 İpucu:</h4>
+                    <ul>
+                        <li>Aile için ortak içerik seçin</li>
+                        <li>Sırayla içerik seçme hakkı verin</li>
+                        <li>Sessiz saatlerde kulaklık zorunluluğu</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h2>Araç İçi Eğlence Cihazları ve Fiyatları</h2>
+            <div class="comparison-boxes">
+                <div class="comparison-box">
+                    <h4>🎧 Kablosuz Kulaklıklar</h4>
+                    <div class="price-tag">₺500 - 3.000</div>
+                    <ul style="text-align: left; padding-left: 1.5rem; margin-top: 1rem;">
+                        <li>Gürültü engelleme</li>
+                        <li>20-30 saat pil ömrü</li>
+                        <li>Bluetooth 5.0+</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Önerilen:</strong> Sony WH-1000XM5, Bose QC45</p>
+                </div>
+                <div class="comparison-box">
+                    <h4>📱 Tablet</h4>
+                    <div class="price-tag">₺3.000 - 15.000</div>
+                    <ul style="text-align: left; padding-left: 1.5rem; margin-top: 1rem;">
+                        <li>10-12 inç ekran</li>
+                        <li>128GB+ depolama</li>
+                        <li>10+ saat pil ömrü</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Önerilen:</strong> iPad Air, Samsung Tab S9</p>
+                </div>
+                <div class="comparison-box">
+                    <h4>🎮 Oyun Konsolu</h4>
+                    <div class="price-tag">₺5.000 - 12.000</div>
+                    <ul style="text-align: left; padding-left: 1.5rem; margin-top: 1rem;">
+                        <li>Taşınabilir</li>
+                        <li>Multiplayer desteği</li>
+                        <li>Geniş oyun kütüphanesi</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Önerilen:</strong> Nintendo Switch, Steam Deck</p>
+                </div>
+                <div class="comparison-box">
+                    <h4>📺 Arka Koltuk Ekranı</h4>
+                    <div class="price-tag">₺2.500 - 8.000</div>
+                    <ul style="text-align: left; padding-left: 1.5rem; margin-top: 1rem;">
+                        <li>Koltuk başlığına monte</li>
+                        <li>9-12 inç ekran</li>
+                        <li>HDMI, USB girişi</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Önerilen:</strong> Naviskauto, DDAUTO</p>
+                </div>
+                <div class="comparison-box">
+                    <h4>🔌 Araç Şarj İstasyonu</h4>
+                    <div class="price-tag">₺300 - 1.500</div>
+                    <ul style="text-align: left; padding-left: 1.5rem; margin-top: 1rem;">
+                        <li>Çoklu USB portları</li>
+                        <li>Hızlı şarj desteği</li>
+                        <li>4-6 cihaz aynı anda</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Önerilen:</strong> Anker, Baseus</p>
+                </div>
+                <div class="comparison-box">
+                    <h4>📶 Mobil WiFi Hotspot</h4>
+                    <div class="price-tag">₺800 - 2.500</div>
+                    <ul style="text-align: left; padding-left: 1.5rem; margin-top: 1rem;">
+                        <li>5-10 cihaz bağlantısı</li>
+                        <li>4G/5G desteği</li>
+                        <li>8+ saat pil</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Önerilen:</strong> Huawei E5577, TP-Link</p>
+                </div>
+            </div>
+            
+            <h2>Uzun Yolculuk İçin Pratik İpuçları</h2>
+			<div class="tips-list">
+            <h4>🎯 Yolculuk Öncesi Hazırlık</h4>
+            <ul>
+                <li><strong>İçerik İndirin:</strong> Tüm filmleri, dizileri ve müzikleri önceden indirin</li>
+                <li><strong>Şarj Edin:</strong> Tüm cihazları tam şarjlı başlatın</li>
+                <li><strong>Powerbank:</strong> En az 20.000 mAh kapasiteli yedek batarya alın</li>
+                <li><strong>Kulaklık Kontrolü:</strong> Kulaklıkların çalıştığından emin olun</li>
+                <li><strong>Uygulama Güncellemeleri:</strong> Yol öncesi tüm uygulamaları güncelleyin</li>
+            </ul>
+        </div>
+
+        <div class="tips-list">
+            <h4>🎯 Yolculuk Sırasında</h4>
+            <ul>
+                <li><strong>Ekran Parlaklığı:</strong> Pil tasarrufu için %50-60'ta tutun</li>
+                <li><strong>Mola Rutini:</strong> Her 2 saatte 15-20 dakika mola verin</li>
+                <li><strong>Aktivite Rotasyonu:</strong> 30-45 dakikada bir aktivite değiştirin</li>
+                <li><strong>Ortak Aktiviteler:</strong> Aile oyunları, kelime oyunları oynayın</li>
+                <li><strong>Yiyecek Molası:</strong> Cihazlardan ara verip birlikte yemek yiyin</li>
+            </ul>
+        </div>
+
+        <div class="safety-warning">
+            <h4>⚠️ Güvenlik Uyarıları</h4>
+            <ul>
+                <li><strong>Sürücü Dikkatı:</strong> Sürücü asla yolculuk sırasında ekran izlememeli</li>
+                <li><strong>Ekran Yerleşimi:</strong> Ekranlar sürücünün görüş alanını kapatmamalı</li>
+                <li><strong>Ses Seviyesi:</strong> Sürücünün dış sesleri duymasını engellemeyecek seviyede</li>
+                <li><strong>Kablo Düzeni:</strong> Kablolar pedal ve direksiyondan uzak olmalı</li>
+                <li><strong>Sabitleme:</strong> Tüm cihazlar güvenli şekilde sabitlenmeli</li>
+            </ul>
+        </div>
+
+        <h2>Bütçeye Göre Eğlence Paketleri</h2>
+
+        <div class="pros-cons">
+            <div class="pros-box">
+                <h4>💰 Ekonomik Paket (₺3.000-5.000)</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.3rem 0;">✓ Tablet tutucu (₺500)</li>
+                    <li style="padding: 0.3rem 0;">✓ Baseus şarj istasyonu (₺400)</li>
+                    <li style="padding: 0.3rem 0;">✓ İki adet kablolu kulaklık (₺400)</li>
+                    <li style="padding: 0.3rem 0;">✓ Powerbank 20.000mAh (₺800)</li>
+                    <li style="padding: 0.3rem 0;">✓ Spotify Premium aile (₺60/ay)</li>
+                    <li style="padding: 0.3rem 0;">✓ Mevcut telefonlarınızı kullanın</li>
+                </ul>
+            </div>
+
+            <div class="pros-box">
+                <h4>⭐ Orta Segment Paket (₺8.000-12.000)</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.3rem 0;">✓ Samsung Tab A8 (₺5.000)</li>
+                    <li style="padding: 0.3rem 0;">✓ Anker şarj istasyonu (₺800)</li>
+                    <li style="padding: 0.3rem 0;">✓ İki kablosuz kulaklık (₺2.000)</li>
+                    <li style="padding: 0.3rem 0;">✓ Arka koltuk tablet tutucu (₺700)</li>
+                    <li style="padding: 0.3rem 0;">✓ Netflix Premium (₺150/ay)</li>
+                    <li style="padding: 0.3rem 0;">✓ Spotify Premium (₺60/ay)</li>
+                </ul>
+            </div>
+
+            <div class="pros-box">
+                <h4>💎 Premium Paket (₺20.000-35.000)</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.3rem 0;">✓ iPad Air + iPad mini (₺18.000)</li>
+                    <li style="padding: 0.3rem 0;">✓ Nintendo Switch (₺8.000)</li>
+                    <li style="padding: 0.3rem 0;">✓ Sony WH-1000XM5 x2 (₺5.000)</li>
+                    <li style="padding: 0.3rem 0;">✓ Premium tablet tutucu (₺1.200)</li>
+                    <li style="padding: 0.3rem 0;">✓ Mobil WiFi hotspot (₺1.500)</li>
+                    <li style="padding: 0.3rem 0;">✓ Tüm premium abonelikler</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Klasik Eğlence Seçenekleri (Ekransız)</h2>
+
+        <div class="highlight-box">
+            <h3>🎭 Teknolojisiz Aktiviteler</h3>
+            <p>Uzun yolculuklarda sürekli ekran başında olmak yerine, aile ile birlikte oynanabilecek klasik oyunlar da çok eğlenceli olabilir:</p>
+            <ul style="line-height: 2; margin-top: 1rem;">
+                <li><strong>20 Soruda Kim/Ne:</strong> Bir şey düşünün, herkes soru sorarak tahmin etsin</li>
+                <li><strong>Plaka Oyunu:</strong> Gördüğünüz plakaların şehirlerini sayın, puan toplayın</li>
+                <li><strong>Kelime Türetme:</strong> Son harften kelime türetme oyunu</li>
+                <li><strong>Şarkı Yarışması:</strong> Sırayla şarkı söyleyin, en çok şarkı bilen kazanır</li>
+                <li><strong>Hikaye Anlatma:</strong> Herkes sırayla hikayeye bir cümle ekler</li>
+                <li><strong>Arabalar Sayma:</strong> Belirli renk/marka araç gören puan kazanır</li>
+                <li><strong>Hayvan Taklidi:</strong> Özellikle küçük çocuklar için eğlenceli</li>
+            </ul>
+        </div>
+
+        <h2>Veri Kullanımı ve İnternet</h2>
+
+        <div class="device-showcase">
+            <h3>📶 İnternet Çözümleri</h3>
+            
+            <h4 style="margin-top: 1.5rem;">1. Telefon Hotspot</h4>
+            <p><strong>Artıları:</strong> Ekstra maliyet yok, kurulum gerektirmez</p>
+            <p><strong>Eksileri:</strong> Telefon pili hızla biter, sınırlı cihaz bağlantısı</p>
+            <p><strong>Tavsiye:</strong> Kısa yolculuklar (2-3 saat) için ideal</p>
+
+            <h4 style="margin-top: 1.5rem;">2. Mobil WiFi Router</h4>
+            <p><strong>Artıları:</strong> 5-10 cihaz bağlanabilir, güçlü sinyal</p>
+            <p><strong>Eksileri:</strong> Ekstra cihaz ve hat ücreti (₺200-300/ay)</p>
+            <p><strong>Tavsiye:</strong> Sık yolculuk yapanlar için ekonomik</p>
+
+            <h4 style="margin-top: 1.5rem;">3. Çevrimdışı İçerik (Önerilen)</h4>
+            <p><strong>Artıları:</strong> İnternet gerektirmez, veri limiti yok</p>
+            <p><strong>Eksileri:</strong> Önceden indirme gerektirir</p>
+            <p><strong>Tavsiye:</strong> En ekonomik ve güvenilir çözüm</p>
+
+            <div style="background: white; padding: 1.5rem; border-radius: 10px; margin-top: 1.5rem;">
+                <h4 style="color: #667eea; margin-top: 0;">💡 Veri Tasarrufu İpuçları:</h4>
+                <ul>
+                    <li>Netflix/YouTube'dan içerikleri "Standart" kalitede indirin (HD yerine)</li>
+                    <li>Spotify'da "İndirme Kalitesi"ni "Normal" seçin</li>
+                    <li>Harita uygulamalarında çevrimdışı haritaları indirin</li>
+                    <li>Uygulamaların arka plan verisi kullanımını kapatın</li>
+                    <li>1 saatlik HD film = ~3GB, Standart kalite = ~700MB</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Sonuç ve Tavsiyeler</h2>
+
+        <p><strong>Uzun yolculuklar,</strong> doğru eğlence sistemleri ile çok daha keyifli hale gelebilir. Modern teknoloji sayesinde artık yolda da evinizdeki konforun tadını çıkarabilirsiniz.</p>
+
+        <div class="highlight-box">
+            <h3>🎯 Son Tavsiyeler</h3>
+            <ul style="line-height: 2;">
+                <li><strong>Dengeli Kullanım:</strong> Ekran ile ekransız aktiviteler arasında denge kurun</li>
+                <li><strong>Aile Zamanı:</strong> Günde en az 1-2 saat tüm cihazlar kapalı aile sohbeti</li>
+                <li><strong>Çevrimdışı Öncelik:</strong> Mümkün olduğunca çevrimdışı içerik kullanın</li>
+                <li><strong>Güvenlik Birinci:</strong> Sürücü dikkati için asla taviz vermeyin</li>
+                <li><strong>Mola Disiplini:</strong> Her 2 saatte hareket molası mutlaka verin</li>
+                <li><strong>Yedek Plan:</strong> Teknoloji arızalanırsa klasik oyunlar için hazırlıklı olun</li>
+            </ul>
+        </div>
+
+        <p>Unutmayın, en iyi araç içi eğlence sistemi, ailenizle geçirdiğiniz kaliteli zamanı destekleyen, yolculuğu daha konforlu hale getiren ama asla ana odak noktası olmayan sistemdir.</p>
+
+        <p><strong>İyi yolculuklar ve keyifli anılar dileriz! 🚗✨</strong></p>
+
+        <!-- Кнопки действия -->
+        <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #eee;">
+            <p><strong>Siz uzun yolculuklarda hangi eğlence sistemlerini kullanıyorsunuz?</strong> Deneyimlerinizi bizimle paylaşın!</p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+                <a href="tips.html" class="btn">← Tüm İpuçları</a>
+                <a href="contact.html" class="btn">Önerilerinizi Paylaşın →</a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Похожие статьи -->
+    <section style="margin-top: 4rem;">
+        <h2>İlginizi Çekebilecek Diğer İpuçları</h2>
+        <div class="grid">
+            <article class="card">
+                <div class="card-image">💰</div>
+                <h3>Yakıt Tasarrufu İpuçları</h3>
+                <p>Deponuzu koruyacak 10 altın kural...</p>
+                <a href="yakit-tasarrufu.html" class="btn">Devamını Oku</a>
+            </article>
+
+            <article class="card">
+                <div class="card-image">💎</div>
+                <h3>Lüks Araç Kiralama</h3>
+                <p>Mercedes, BMW kiralama rehberi...</p>
+                <a href="luks-otomobil-kiralama.html" class="btn">Devamını Oku</a>
+            </article>
+
+            <article class="card">
+                <div class="card-image">❄️</div>
+                <h3>Kış Lastiği Seçimi</h3>
+                <p>Güvenli kış sürüşü için lastik rehberi...</p>
+                <a href="tips.html" class="btn">Devamını Oku</a>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Atasayar Oto. Tüm hakları saklıdır.</p>
+        <p>atasayaroto.com</p>
+    </div>
+</footer>
+</body>
+</html>
