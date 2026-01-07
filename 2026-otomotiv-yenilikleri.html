@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Otomotiv Dünyası: Bizi Hangi Yenilikler Bekliyor? | Atasayar Oto</title>
+    <meta name="description" content="2026 yılında otomotiv dünyasını değiştirecek yenilikler: Katı hal bataryalar, Seviye 4 otonom araçlar, hidrojen teknolojisi, yapay zeka ve bağlantılı araçlar. Geleceğin otomobilleri burada!">
+    <meta name="keywords" content="2026 otomobil, yeni araçlar 2026, otomotiv yenilikleri, katı hal batarya, otonom araç 2026, hidrojen araç, yapay zeka otomobil, elektrikli araç 2026">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .article-content h2 {
+            color: #1e3c72;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
+        }
+        
+        .article-content h3 {
+            color: #2a5298;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .article-date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .innovation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .innovation-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-top: 4px solid #667eea;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .innovation-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.3);
+        }
+        
+        .innovation-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .innovation-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+        
+        .highlight-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+        
+        .car-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .car-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .car-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .car-image-placeholder {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+        
+        .car-info {
+            padding: 1.5rem;
+        }
+        
+        .car-price {
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        
+        .comparison-section {
+            background: #f9f9f9;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .comparison-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .old-tech {
+            opacity: 0.6;
+        }
+        
+        .arrow {
+            font-size: 2rem;
+            color: #667eea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .timeline-2026 {
+            position: relative;
+            padding: 2rem 0;
+        }
+        
+        .timeline-item {
+            background: white;
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 5px;
+            position: relative;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 1.5rem;
+            width: 12px;
+            height: 12px;
+            background: #667eea;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        
+        .quarter-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .info-box {
+            background: #f0f7ff;
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 5px;
+        }
+        
+        .info-box h4 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        .stat-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .stat-box {
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #667eea;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        
+        .brand-news {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .brand-logo {
+            font-size: 2.5rem;
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>🚗 Atasayar Oto</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="reviews.html">İncelemeler</a></li>
+                    <li><a href="news.html" class="active">Haberler</a></li>
+                    <li><a href="tips.html">İpuçları</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" style="padding-top: 2rem;">
+        <article class="article-content">
+            <!-- Дата и метаданные -->
+            <div class="article-date">📅 07 Ocak 2026 | ⏱️ 15 dakika okuma | 🚀 2026 Öngörüleri</div>
+            
+            <!-- Заголовок H1 -->
+            <h1>2026 Otomotiv Dünyası: Bizi Hangi Yenilikler Bekliyor?</h1>
+            
+            <!-- Главное изображение -->
+            <img src="images/2026-otomotiv-yenilikler.webp" alt="2026 Otomotiv Yenilikleri - Gelecek Burada" class="hero-image">
+            
+            <!-- Введение -->
+            <p><strong>2026 yılı, otomotiv dünyası için dönüm noktası olacak.</strong> Elektrikli araçlar hızla yaygınlaşırken, otonom sürüş teknolojisi Seviye 4’e yaklaşıyor, katı hal bataryalar pazara giriyor ve yapay zeka araçların her köşesine entegre ediliyor. [web:1]</p>
+            
+            <p>Bu yazıda, <strong>2026 yılında otomotiv sektöründe bizi bekleyen en önemli yenilikleri</strong>, piyasaya çıkacak dikkat çekici modelleri, 2025’e göre farkları ve 2030’a uzanan mobilite vizyonunu detaylı biçimde inceleyeceksiniz. [web:1]</p>
+
+            <!-- Статистика -->
+            <div class="highlight-box">
+                <h3>🎯 2026 Yılı Hedefleri</h3>
+                <div class="stat-showcase">
+                    <div class="stat-box">
+                        <span class="stat-number">25%</span>
+                        <span class="stat-label">Küresel EV satış payı (tahmini)</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">50M</span>
+                        <span class="stat-label">Bağlantılı araç sayısı</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">1000km</span>
+                        <span class="stat-label">Tek şarj menzili (üst segment)</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">Seviye 4</span>
+                        <span class="stat-label">Otonom sürüş testleri</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">$80/kWh</span>
+                        <span class="stat-label">Batarya maliyeti hedef seviyesi</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Основные инновации -->
+            <h2>2026'da Hayatımıza Girecek 10 Büyük Yenilik</h2>
+
+            <div class="innovation-grid">
+                <div class="innovation-card">
+                    <span class="innovation-icon">🔋</span>
+                    <span class="innovation-badge">Devrim Niteliğinde</span>
+                    <h3>1. Katı Hal Bataryalar</h3>
+                    <p>Toyota, Mercedes ve BMW 2026’da ilk katı hal bataryalı araçlarını sınırlı da olsa piyasaya sunmaya hazırlanıyor. [web:1]</p>
+                    <ul style="margin-top: 1rem;">
+                        <li><strong>1000+ km menzil</strong></li>
+                        <li>10 dakikada %80 şarj</li>
+                        <li>20+ yıl ömür hedefi</li>
+                        <li>%30–50 daha hafif paketler</li>
+                        <li>Yangın riskinin ciddi şekilde azalması</li>
+                    </ul>
+                </div>
+
+                <div class="innovation-card">
+                    <span class="innovation-icon">🤖</span>
+                    <span class="innovation-badge">Yaygınlaşıyor</span>
+                    <h3>2. Seviye 4 Otonom Sürüş</h3>
+                    <p>Seçili şehirlerde, belirlenmiş bölgelerde insan müdahalesi olmadan tam otonom sürüş testleri genişliyor. [web:1]</p>
+                    <ul style="margin-top: 1rem;">
+                        <li>Otoyollarda eller serbest sürüş</li>
+                        <li>Şehir içi otonom taksi hizmetleri</li>
+                        <li>Otomatik park (valet) sistemleri</li>
+                        <li>Kaza riskinde %50+ azalma hedefi</li>
+                        <li>Mercedes, Tesla, Waymo, Çinli markalar önde</li>
+                    </ul>
+                </div>
+
+                <div class="innovation-card">
+                    <span class="innovation-icon">💨</span>
+                    <span class="innovation-badge">Alternatif Enerji</span>
+                    <h3>3. Hidrojen Yakıt Hücresi</h3>
+                    <p>Toyota Mirai, Hyundai Nexo ve BMW iX5 Hydrogen gibi modeller özellikle filo ve ağır ticari tarafta öne çıkıyor. [web:1]</p>
+                    <ul style="margin-top: 1rem;">
+                        <li>5 dakikada tam dolum</li>
+                        <li>600+ km menzil</li>
+                        <li>Sıfıra yakın emisyon</li>
+                        <li>Ağır vasıta ve uzun yol için ideal</li>
+                        <li>Yeni hidrojen istasyon yatırımları</li>
+                    </ul>
+                </div>
+
+                <div class="innovation-card">
+                    <span class="innovation-icon">🧠</span>
+                    <span class="innovation-badge">AI Devrimi</span>
+                    <h3>4. Yapay Zeka Asistanları</h3>
+                    <p>Doğal dil ile konuşabildiğiniz, kişisel alışkanlıklarınızı öğrenen AI asistanlar neredeyse tüm yeni nesil araçlarda standart oluyor. [web:1]</p>
+                    <ul style="margin-top: 1rem;">
+                        <li>Sesle rota, klima, medya yönetimi</li>
+                        <li>Sürüş stiline göre öneriler</li>
+                        <li>Sürekli öğrenen profil tabanlı sistemler</li>
+                        <li>Bulut üzerinden güncellemeler</li>
+                        <li>Mercedes MBUX, BMW iDrive 9 gibi platformlar</li>
+                    </ul>
+                </div>
+
+                <div class="innovation-card">
+                    <span class="innovation-icon">🌐</span>
+                    <span class="innovation-badge">Bağlantı</span>
+                    <h3>5. V2X İletişimi</h3>
+                    <p>Araçtan araca ve araçtan altyapıya iletişim (V2X) trafik güvenliği ve akışında devreye giriyor. [web:1]</p>
+                    <ul style="margin-top: 1rem;">
+                        <li>Acil fren, kaza uyarı paylaşımı</li>
+                        <li>Trafik ışığı optimizasyonu</li>
+                        <li>Boş park yeri bilgisi paylaşımı</li>
+                        <li>5G ve sonrasında 6G entegrasyonu</li>
+                        <li>Akıllı şehir projeleriyle uyum</li>
+                    </ul>
+                </div>
+
+                <div class="innovation-card">
+                    <span class="innovation-icon">🥽</span>
+                    <span class="innovation-badge">AR/VR</span>
+                    <h3>6. Artırılmış Gerçeklik HUD</h3>
+                    <p>Ön cam, navigasyon ve güvenlik bilgilerini artırılmış gerçeklikle yola bindiren dev bir ekrana dönüşüyor. [web:1]</p>
+                    <ul style="margin-top: 1rem;">
+                        <li>Şerit bazlı navigasyon okları</li>
+                        <li>Hız, uyarı ve trafik işaretleri AR ile</li>
+                        <li>Gece görüş ve yaya vurgulama</li>
+                        <li>Holografik gösterge panelleri</li>
+                        <li>Mercedes, BMW, Audi gibi markaların premium paketlerinde</li>
+                    </ul>
+                </div>
+
+                <div class="innovation-card">
+                    <span class="innovation-icon">🔌</span>
+                    <span class="innovation-badge">Şarj Devrimi</span>
+                    <h3>7. Mega Hızlı Şarj (500kW+)</h3>
+                    <p>Üst düzey şarj altyapıları ile 5–10 dakikada uzun menzilli dolum dönemi başlıyor. [web:1]</p>
+                    <ul style="margin-top: 1rem;">
+                        <li>500kW+ DC şarj istasyonları</li>
+                        <li>5 dakikada 200 km menzil kazanımı</li>
+                        <li>Park alanlarında kablosuz şarj pilotları</li>
+                        <li>Güneş panelli istasyon konseptleri</li>
+                        <li>Tesla V4, Ionity ve yeni ağ yatırımları</li>
+                    </ul>
+                </div>
+
+                <div class="innovation-card">
+                    <span class="innovation-icon">🎨</span>
+                    <span class="innovation-badge">Tasarım</span>
+                    <h3>8. Dijital Kaplama</h3>
+                    <p>BMW iX Flow gibi gövde rengi dijital olarak değişebilen araçlar, kişiselleştirmeyi yeni seviyeye taşıyor. [web:1]</p>
+                    <ul style="margin-top: 1rem;">
+                        <li>E-ink bazlı paneller</li>
+                        <li>Tek tuşla renk/tema değişimi</li>
+                        <li>Reklam ve kişisel tasarım kullanımı</li>
+                        <li>Isı yönetimi için açık/koyu mod</li>
+                        <li>Premium segmentte sınırlı üretim</li>
+                    </ul>
+                </div>
+
+                <div class="innovation-card">
+                    <span class="innovation-icon">🛡️</span>
+                    <span class="innovation-badge">Güvenlik</span>
+                    <h3>9. Biyometrik Sistemler</h3>
+                    <p>Yüz tanıma, parmak izi ve göz takibi, hem güvenlik hem konfor için yaygınlaşıyor. [web:1]</p>
+                    <ul style="margin-top: 1rem;">
+                        <li>Anahtarsız giriş ve çalıştırma</li>
+                        <li>Sürücüye özel koltuk/ayna profilleri</li>
+                        <li>Hırsızlık riskinin düşürülmesi</li>
+                        <li>Yorgunluk ve dikkat dağınıklığı algılama</li>
+                        <li>Mercedes, Genesis, Audi gibi markalarda</li>
+                    </ul>
+                </div>
+
+                <div class="innovation-card">
+                    <span class="innovation-icon">♻️</span>
+                    <span class="innovation-badge">Sürdürülebilirlik</span>
+                    <h3>10. Geri Dönüştürülmüş Malzemeler</h3>
+                    <p>İç ve dış malzemelerde geri dönüştürülmüş ve biyobazlı materyaller artık bir pazarlama argümanı değil, standart haline geliyor. [web:1]</p>
+                    <ul style="margin-top: 1rem;">
+                        <li>Okyanus plastiklerinden koltuk kumaşı</li>
+                        <li>Vegan deri ve geri dönüştürülmüş tekstil</li>
+                        <li>Bambu, mantar gibi yenilenebilir kaynaklar</li>
+                        <li>Düşük karbon izli üretim tesisleri</li>
+                        <li>BMW i Vision Circular gibi konseptler</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2026 выставка автомобилей -->
+            <h2>2026 Yılında Piyasaya Çıkacak Beklenen Modeller</h2>
+
+            <div class="car-showcase">
+                <div class="car-card">
+                    <div class="car-image-placeholder">🏎️</div>
+                    <div class="car-info">
+                        <h4>Toyota Solid-State EV</h4>
+                        <p>İlk katı hal bataryalı seri üretim araçlardan biri olarak konumlanıyor. [web:1]</p>
+                        <ul style="font-size: 0.9rem; margin-top: 0.5rem;">
+                            <li>1200 km menzil hedefi</li>
+                            <li>10 dakikada hızlı şarj</li>
+                            <li>Yeni nesil batarya platformu</li>
+                        </ul>
+                        <div class="car-price">¥7.000.000 (~€42.000)</div>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image-placeholder">⭐</div>
+                    <div class="car-info">
+                        <h4>Mercedes EQG</h4>
+                        <p>Elektrikli G-Serisi, ikonik off-road karakterini sıfır emisyon ile birleştiriyor. [web:1]</p>
+                        <ul style="font-size: 0.9rem; margin-top: 0.5rem;">
+                            <li>400+ km menzil</li>
+                            <li>Dört bağımsız elektrik motoru</li>
+                            <li>Seviye 3 otonom sürüş desteği</li>
+                        </ul>
+                        <div class="car-price">€150.000+</div>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image-placeholder">🔋</div>
+                    <div class="car-info">
+                        <h4>BMW iX3 (Yeni Nesil)</h4>
+                        <p>Geliştirilmiş menzil ve yazılım altyapısıyla tamamen yenilenen elektrikli SUV. [web:1]</p>
+                        <ul style="font-size: 0.9rem; margin-top: 0.5rem;">
+                            <li>650 km’ye kadar menzil</li>
+                            <li>350kW hızlı şarj desteği</li>
+                            <li>iDrive 9.0 bilgi-eğlence sistemi</li>
+                        </ul>
+                        <div class="car-price">€65.000+</div>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image-placeholder">⚡</div>
+                    <div class="car-info">
+                        <h4>Tesla Model 2</h4>
+                        <p>Uygun fiyatlı Tesla, kitle pazarı hedefleyen global kompakt EV modeli. [web:1]</p>
+                        <ul style="font-size: 0.9rem; margin-top: 0.5rem;">
+                            <li>~500 km menzil hedefi</li>
+                            <li>$25.000 seviyesinde başlangıç fiyatı</li>
+                            <li>Geliştirilmiş FSD özellikleri</li>
+                        </ul>
+                        <div class="car-price">$25.000 (~€23.000)</div>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image-placeholder">💨</div>
+                    <div class="car-info">
+                        <h4>Hyundai Ioniq 7</h4>
+                        <p>7 koltuklu büyük boy aile odaklı elektrikli SUV modeli. [web:1]</p>
+                        <ul style="font-size: 0.9rem; margin-top: 0.5rem;">
+                            <li>480 km civarı menzil</li>
+                            <li>E-GMP platformu</li>
+                            <li>350kW şarj altyapısı</li>
+                        </ul>
+                        <div class="car-price">€70.000+</div>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image-placeholder">🇹🇷</div>
+                    <div class="car-info">
+                        <h4>Togg Sedan</h4>
+                        <p>Türkiye’nin ikinci elektrikli modeli ile ürün gamı genişliyor. [web:1]</p>
+                        <ul style="font-size: 0.9rem; margin-top: 0.5rem;">
+                            <li>400+ km menzil seçeneği</li>
+                            <li>Daha rekabetçi fiyatlandırma</li>
+                            <li>Yerli yazılım ve bağlantılı hizmetler</li>
+                        </ul>
+                        <div class="car-price">₺750.000+</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline 2026 -->
+            <h2>2026 Yılı Çeyrek Çeyrek Neler Olacak?</h2>
+
+            <div class="timeline-2026">
+                <div class="timeline-item">
+                    <span class="quarter-badge">Q1 2026 (Ocak-Mart)</span>
+                    <h4>CES 2026 ve İlk Tanıtımlar</h4>
+                    <p><strong>CES Las Vegas:</strong> BMW, Mercedes ve Sony Honda Mobility yeni elektrikli ve otonom konseptlerini sahneye çıkarıyor. [web:1]</p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>BMW iX3 dünya prömiyeri</li>
+                        <li>Mercedes EQG ön siparişleri açılıyor</li>
+                        <li>Togg Sedan konsept tanıtımı</li>
+                        <li>Apple benzeri teknoloji devlerinin otomotiv hamlelerine dair söylentiler</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="quarter-badge">Q2 2026 (Nisan-Haziran)</span>
+                    <h4>Cenevre ve Şangay Fuarları</h4>
+                    <p><strong>Cenevre Otomobil Fuarı:</strong> Avrupa markaları yeni jenerasyon elektrikli ve hibrit modellerini yoğun şekilde sergiliyor. [web:1]</p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Audi Q6 e-tron lansmanı</li>
+                        <li>Porsche Macan Electric satışa çıkıyor</li>
+                        <li>Volkswagen ID.7 GTX tanıtımı</li>
+                        <li>BYD ve NIO’nun Avrupa genişleme planları</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="quarter-badge">Q3 2026 (Temmuz-Eylül)</span>
+                    <h4>Toyota Katı Hal Devrimi</h4>
+                    <p><strong>Temmuz:</strong> Toyota, katı hal bataryalı ilk aracının pilot üretim sürecini ve menzil verilerini detaylandırıyor. [web:1]</p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Toyota Solid-State EV pilot üretim hatları</li>
+                        <li>Tesla Model 2 ön siparişlerinin açılması (beklenti)</li>
+                        <li>IAA Münih’te Alman markalarının yeni elektrikli platformları</li>
+                        <li>Hyundai Ioniq 7 dünya lansmanı</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="quarter-badge">Q4 2026 (Ekim-Aralık)</span>
+                    <h4>Yılın Son Sürprizi ve 2027 Önizlemesi</h4>
+                    <p><strong>LA Auto Show:</strong> 2027 model yılı araçların tanıtımları hız kazanıyor. [web:1]</p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Mercedes EQG ilk teslimatlar (seçili müşterilere)</li>
+                        <li>BMW iX3 Avrupa satış başlangıcı</li>
+                        <li>Togg Sedan için 2027 üretim takvimi</li>
+                        <li>2026 yılının en çok satan elektrikli modellerinin açıklanması</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>2025 vs 2026: Ne Değişiyor?</h2>
+
+            <div class="comparison-section">
+                <h3 style="color: #667eea; margin-top: 0;">Teknoloji Karşılaştırması</h3>
+                <div class="comparison-grid">
+                    <div class="comparison-item old-tech">
+                        <h4>2025</h4>
+                        <p><strong>Lityum-İyon Batarya</strong></p>
+                        <p>~500 km menzil</p>
+                        <p>30 dakikada %80 şarj (hızlı şarjda)</p>
+                        <p>~500.000 km pil ömrü</p>
+                        <p>Seviye 2–3 otonom sürüş</p>
+                    </div>
+
+                    <div class="arrow">➡️</div>
+
+                    <div class="comparison-item">
+                        <h4>2026</h4>
+                        <p><strong>Katı Hal Batarya</strong></p>
+                        <p>~1000 km menzil (üst segment)</p>
+                        <p>10 dakikada %80 şarj hedefi</p>
+                        <p>1.000.000 km’ye yakın pil ömrü</p>
+                        <p>Seviye 4’e yakın otonom testleri</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bilgi kutusu -->
+            <div class="info-box">
+                <h4>🚘 Sektörün Yönü: Elektrifikasyon + Zeka</h4>
+                <p>2026 yılı, otomotiv endüstrisinin donanım merkezli yapıdan yazılım ve veri merkezli mimariye geçtiği dönem olarak öne çıkıyor. Araçlar, bağlantılı hizmetler ve güncellemelerle yaşayan birer dijital platforma dönüşüyor. [web:1]</p>
+            </div>
+
+            <!-- 2030 Vizyonu -->
+            <h2>2030’a Doğru: Otomotivde Bir Sonraki Adım</h2>
+            <p>2026 büyük dönüşümün başlangıç yılı; asıl kırılma ise 2030’a doğru yaşanacak. Elektrikli araçların küresel binek satışlarındaki payının %40 seviyesine yaklaşması, birçok büyük şehirde içten yanmalı motorlu araçlara ciddi kısıtlamalar getirilmesi bekleniyor. [web:1]</p>
+            <p>2030’a gelindiğinde, yazılım güncellemeleriyle sürekli gelişen, abonelik modeliyle ek özelliklerin açıldığı ve enerji ekosistemiyle (ev, iş, şebeke) entegre çalışan araçlar norm haline gelecek. Araç sahipliği yerine paylaşım, kısa dönem kiralama ve filo bazlı kullanım modelleri yaygınlaşacak. [web:1]</p>
+
+            <!-- Şehir içi mobilite trendleri -->
+            <h2>Şehir İçi Mobilite: Mikro EV ve Otonom Taksi Çağı</h2>
+            <p>Büyük şehirlerde, 2–3 kişilik mikro EV’ler, elektrikli scooter’lar ve paylaşımlı otonom taksiler, klasik binek otomobillerden daha çok tercih edilen çözümler haline gelmeye başlıyor. Bu sayede hem park alanı ihtiyacı düşüyor hem de trafik yazılım tabanlı sistemlerle daha akıllı yönetiliyor. [web:1]</p>
+            <p>Belediyeler ve özel işletmeler, akıllı şarj altyapısı, dinamik fiyatlandırma ve gerçek zamanlı trafik verisini tek çatı altında birleştiren mobilite platformları kuruyor. Otomobil, tek başına bir ürün değil; akıllı şehir ekosisteminin önemli bir bileşeni olarak yeniden tanımlanıyor. [web:1]</p>
+
+            <!-- Marka haberleri -->
+            <h2>Markalardan 2026 Hamleleri</h2>
+            <div class="brand-news">
+                <h3><span class="brand-logo">⚙️</span>Toyota</h3>
+                <p>Katı hal batarya yatırımlarını hızlandırarak 2030’a kadar milyonlarca elektrikli araç satmayı hedefliyor ve hibrit tecrübesini tamamen elektrikli platformlara taşıyor. [web:1]</p>
+            </div>
+
+            <div class="brand-news">
+                <h3><span class="brand-logo">⭐</span>Mercedes-Benz</h3>
+                <p>EQG ve yeni nesil CLA EV gibi modellerle lüks segmentte tam elektrikli dönüşümü hızlandırırken, yazılım tabanlı gelir modellerine odaklanıyor. [web:1]</p>
+            </div>
+
+            <div class="brand-news">
+                <h3><span class="brand-logo">🔋</span>Tesla</h3>
+                <p>Model 2 ile uygun fiyatlı EV pazarını hedefleyerek rekabeti alt ve orta segmentte kızıştırıyor ve otonom sürüş yazılımını abonelik modeliyle geniş kitlelere sunuyor. [web:1]</p>
+            </div>
+
+            <div class="brand-news">
+                <h3><span class="brand-logo">🇹🇷</span>Togg</h3>
+                <p>Yeni sedan modeli ve genişleyen servis/şarj ağı ile hem Türkiye’de hem Avrupa’da marka bilinirliğini artırmayı, üretim kapasitesini ise kademeli olarak büyütmeyi planlıyor. [web:1]</p>
+            </div>
+
+            <!-- Sonuç -->
+            <h2>Sonuç: Gelecek Başladı</h2>
+            <p>2026 yılı, otomotiv tarihine elektrikli, bağlantılı ve zeki araçların gerçek anlamda ana akım haline geldiği dönem olarak yazılacak. Sürücüler, artık sadece araç kullanmayacak; akıllı sistemlerle etkileşime girerek enerji verimliliğini yönetecek ve yolculuklarını uçtan uca dijital bir deneyime dönüştürecek. [web:1]</p>
+
+            <p><strong>Atasayar Oto</strong> olarak biz de bu dönüşümü yakından takip ediyor, yeni modelleri, teknolojileri ve piyasaya çıkacak fırsatları sizlerle paylaşmaya devam edeceğiz. 🚘⚡ [web:1]</p>
+        </article>
+    </main>
+</body>
+</html>
