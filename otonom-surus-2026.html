@@ -1,1 +1,523 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026'da Otonom Sürüş: Hayal mi, Gerçek mi? | Atasayar Oto</title>
+    <meta name="description" content="2026 yılında otonom sürüş teknolojisi nerede? Seviye 3, 4 ve 5 otonom araçlar, Tesla FSD, Waymo ve yasal düzenlemeler hakkında kapsamlı rehber.">
+    <meta name="keywords" content="otonom sürüş, sürücüsüz araç, self-driving car, Tesla FSD, Waymo, seviye 4 otonom, yapay zeka araç, 2026 otonom araç">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .article-content h2 {
+            color: #1e3c72;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
+        }
+        
+        .article-content h3 {
+            color: #2a5298;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
 
+        /* Otonom Sürüş Seviyeleri Grid */
+        .level-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .level-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .level-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .level-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .level-card-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .level-card h3 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .level-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .level-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .level-card li::before {
+            content: '🚗';
+            position: absolute;
+            left: 0;
+        }
+
+        /* Karşılaştırma Tablosu */
+        .comparison-table {
+            width: 100%;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .comparison-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .comparison-table tr:hover {
+            background: #f9f9f9;
+        }
+
+        /* İstatistik Vurgulama */
+        .highlight-stat {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .highlight-stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Zaman Tüneli */
+        .timeline-2026 {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .timeline-year {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .timeline-year::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            width: 4px;
+            height: 100%;
+            background: #667eea;
+        }
+
+        .year-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            min-width: 100px;
+            text-align: center;
+        }
+
+        /* Avantaj / Durum Grid */
+        .advantage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .advantage-item {
+            background: #f0f7ff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .advantage-item h4 {
+            color: #667eea;
+            margin-top: 0;
+            margin-bottom: 0.8rem;
+        }
+
+        .article-date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 5px;
+        }
+
+        .info-box strong {
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>🚗 Atasayar Oto</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="reviews.html">İncelemeler</a></li>
+                    <li><a href="news.html" class="active">Haberler</a></li>
+                    <li><a href="tips.html">İpuçları</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container" style="padding-top: 2rem;">
+        <article class="article-content">
+
+            <div class="article-date">📅 28 Mart 2026 | ⏱️ 14 dakika okuma | 🤖 Teknoloji</div>
+
+            <h1>2026'da Otonom Sürüş: Hayal mi, Gerçek mi?</h1>
+
+            <img src="otonom-surus-2026.webp" alt="2026 Otonom Sürüş Teknolojisi - Yapay Zeka ve Sürücüsüz Araçlar" class="hero-image">
+
+            <p><strong>Otonom sürüş teknolojisi,</strong> son on yılda dünyanın en büyük otomobil üreticilerinin ve teknoloji devlerinin üzerine milyarlarca dolar döktüğü bir yarışa dönüştü. Peki 2026 itibarıyla gerçekte neredeyiz? Sürücüsüz arabalar hayal olmaktan çıktı mı?</p>
+
+            <p>Bu yazıda, <strong>otonom sürüşün bugünkü gerçekliğini, Waymo ve Tesla gibi öncü şirketlerin son durumunu,</strong> hangi ülkede ne kadar ilerleme kaydedildiğini ve bizi bekleyen önümüzdeki yılları detaylıca ele alıyoruz.</p>
+
+            <div class="highlight-stat">
+                <span class="highlight-stat-number">Seviye 3</span>
+                <p>2026 itibarıyla kamuya açık yolda yasal olan en yüksek otonom seviye</p>
+                <p style="font-size: 0.9rem; opacity: 0.9; margin-top: 0.5rem;">Almanya, ABD ve Japonya'da sınırlı koşullarda geçerli</p>
+            </div>
+
+            <h2>Otonom Sürüş Seviyeleri Nedir?</h2>
+
+            <p>SAE International tarafından tanımlanan <strong>0'dan 5'e kadar altı otonom sürüş seviyesi</strong> bulunuyor. Her seviye, araçların ne kadar bağımsız hareket edebildiğini gösteriyor:</p>
+
+            <div class="level-grid">
+                <div class="level-card">
+                    <div class="level-card-icon">🧑‍✈️</div>
+                    <h3>Seviye 0–2: Sürücü Asistanı</h3>
+                    <p>Sürücü her zaman aktif olmalı. Sistem yalnızca yardımcıdır.</p>
+                    <ul>
+                        <li>Şerit takip sistemi (LKAS)</li>
+                        <li>Adaptif hız sabitleme (ACC)</li>
+                        <li>Acil frenleme yardımı</li>
+                        <li>Park yardımı</li>
+                        <li>Tesla Autopilot (Seviye 2)</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;"><strong>Durum:</strong> Yaygın olarak mevcut, satışta</p>
+                </div>
+
+                <div class="level-card">
+                    <div class="level-card-icon">🤖</div>
+                    <h3>Seviye 3: Koşullu Otomasyon</h3>
+                    <p>Belirli koşullarda araç kendi kendine sürer; sürücü devreye girebilir.</p>
+                    <ul>
+                        <li>Honda Legend (Japonya) – yasal</li>
+                        <li>Mercedes Drive Pilot – otoban</li>
+                        <li>BMW PersonalPilot – sınırlı</li>
+                        <li>60 km/s altı hız sınırı</li>
+                        <li>Belirli ülkelerde onaylı</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;"><strong>Durum:</strong> Sınırlı pazarda aktif, 2026</p>
+                </div>
+
+                <div class="level-card">
+                    <div class="level-card-icon">🛸</div>
+                    <h3>Seviye 4–5: Tam Otonom</h3>
+                    <p>Araç her koşulda kendi kendine sürer; sürücü gerekli değil.</p>
+                    <ul>
+                        <li>Waymo One (robotaksi hizmeti)</li>
+                        <li>Cruise (GM) – sınırlı bölgeler</li>
+                        <li>Baidu Apollo – Çin pazarı</li>
+                        <li>San Francisco, Phoenix aktif</li>
+                        <li>Henüz genel kamuya açık değil</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;"><strong>Durum:</strong> Pilot bölgelerde ticari hizmet</p>
+                </div>
+            </div>
+
+            <h2>2026'da Öne Çıkan Şirketler</h2>
+
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Şirket</th>
+                            <th>Teknoloji / Ürün</th>
+                            <th>Seviye</th>
+                            <th>Durum (2026)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Waymo (Google)</strong></td>
+                            <td>Waymo One Robotaksi</td>
+                            <td>Seviye 4</td>
+                            <td>ABD'de 5+ şehirde aktif</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tesla</strong></td>
+                            <td>Full Self-Driving (FSD) v13</td>
+                            <td>Seviye 2–3</td>
+                            <td>Küresel güncelleme devam ediyor</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mercedes-Benz</strong></td>
+                            <td>Drive Pilot</td>
+                            <td>Seviye 3</td>
+                            <td>Almanya ve ABD'de yasal onay</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Baidu</strong></td>
+                            <td>Apollo Go</td>
+                            <td>Seviye 4</td>
+                            <td>Çin'de 10+ şehirde ticari hizmet</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Honda / GM Cruise</strong></td>
+                            <td>Origin Robotaksi</td>
+                            <td>Seviye 4</td>
+                            <td>Pilot program devam ediyor</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mobileye (Intel)</strong></td>
+                            <td>EyeQ Ultra Chip</td>
+                            <td>Seviye 3+</td>
+                            <td>OEM entegrasyonu 2026'da yoğunlaşıyor</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Tesla FSD: Hâlâ Vaatler Mi Gerçeklik Mi?</h2>
+
+            <p>Tesla'nın <strong>Full Self-Driving (FSD)</strong> yazılımı, yıllardır "yakında tam otonom" sözüyle gündemde. 2026 itibarıyla FSD v13 ile araçlar şehir içi sürüşlerde ciddi ölçüde bağımsız hareket edebiliyor; ancak her koşulda sürücünün hazır bulunması yasal zorunluluk olmaya devam ediyor.</p>
+
+            <p>Tesla'nın geliştirdiği <strong>yapay zeka tabanlı görüntü işleme sistemi (Tesla Vision),</strong> LIDAR sensör kullanmayan tek büyük oyuncu olması nedeniyle sektörde tartışmalı. Şirket, kamera + sinir ağı kombinasyonuyla Seviye 3 sertifikasyonu almak için Almanya'da başvuruda bulunmuş durumda.</p>
+
+            <div class="info-box">
+                <strong>💡 Bilgi:</strong> Tesla, 2025 yılı sonunda robotaksi hizmetini "Cybercab" ismiyle Texas ve California'da başlattı. Ancak düzenleyici onay süreci hâlâ devam etmekte; hizmet sınırlı bölgelerde pilot aşamasında.
+            </div>
+
+            <h2>Waymo: Gerçek Anlamda Robotaksi</h2>
+
+            <p><strong>Waymo One,</strong> 2026 itibarıyla San Francisco, Phoenix, Los Angeles ve Austin'de sürücüsüz (güvenlik şoförü olmadan) ticari hizmet veriyor. Günde 50.000'den fazla seyahat gerçekleştiren Waymo, sektörün en olgun Seviye 4 çözümü konumunda.</p>
+
+            <p>Waymo'nun 10 milyon km'yi aşan <strong>güvenlik sürüş verisi</strong> ve insan sürücülere kıyasla çok daha düşük kaza oranı, otonom sürüşün "hayal değil gerçek" olduğunun en güçlü kanıtı. Şirket 2026'da Atlanta ve Miami'ye de genişliyor.</p>
+
+            <h2>Otonom Sürüşün Önündeki Engeller</h2>
+
+            <div class="advantage-grid">
+                <div class="advantage-item">
+                    <h4>⚖️ Yasal Boşluklar</h4>
+                    <p>Otonom araç kaza yaptığında kimin sorumlu olacağı henüz net değil. Ülkeler arası farklı mevzuat, küresel yayılımı yavaşlatıyor.</p>
+                </div>
+
+                <div class="advantage-item">
+                    <h4>🌧️ Kötü Hava Koşulları</h4>
+                    <p>Yoğun yağmur, kar ve sis, sensörleri ve kameraları olumsuz etkiliyor. Kuzey ülkelerinde güvenilirlik hâlâ yetersiz.</p>
+                </div>
+
+                <div class="advantage-item">
+                    <h4>🏙️ Karmaşık Şehir İçi Trafik</h4>
+                    <p>İstanbul veya Mumbai gibi kaotik şehirlerde otonom sistemler düşük performans gösteriyor. Pek çok senaryo eğitim verisinde yok.</p>
+                </div>
+
+                <div class="advantage-item">
+                    <h4>💸 Maliyet</h4>
+                    <p>LIDAR sensörler hâlâ pahalı. Tam otonom araç fiyatı, ortalama tüketicinin bütçesinin çok üzerinde seyrediyor.</p>
+                </div>
+
+                <div class="advantage-item">
+                    <h4>🔒 Siber Güvenlik</h4>
+                    <p>Bağlantılı ve otonom araçlar, bilgisayar korsanlığı ve uzaktan saldırı risklerine maruz. Yazılım güvenliği kritik öneme sahip.</p>
+                </div>
+
+                <div class="advantage-item">
+                    <h4>🧠 Yapay Zekanın Sınırları</h4>
+                    <p>Beklenmedik senaryolarda (hasar görmüş yol işaretleri, insanların öngörülmez hareketleri) yapay zeka hâlâ zorlanıyor.</p>
+                </div>
+            </div>
+
+            <h2>Otonom Sürüş Zaman Tüneli</h2>
+
+            <div class="timeline-2026">
+                <div class="timeline-year">
+                    <div class="year-badge">2024</div>
+                    <div>
+                        <strong>Robotaksi Hizmetleri Yayılıyor</strong>
+                        <p>Waymo, San Francisco ve Phoenix'te güvenlik şoförsüz hizmet başlattı. Tesla FSD v12, yapay zeka tabanlı yeni mimariye geçti. Çin'de Baidu Apollo Go 100.000 seyahati aştı.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-year">
+                    <div class="year-badge">2025</div>
+                    <div>
+                        <strong>Tesla Cybercab ve Seviye 3 Onayları</strong>
+                        <p>Tesla "Cybercab" robotaksisini ABD'nin iki eyaletinde pilot olarak başlattı. Mercedes Drive Pilot, California'da yasal onay aldı. AB, Seviye 3 için ortak standart yayımladı.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-year">
+                    <div class="year-badge">2026</div>
+                    <div>
+                        <strong>Genişleme ve Olgunlaşma Dönemi (Şu An)</strong>
+                        <p>Waymo 5 yeni şehre açıldı. Japonya ve Güney Kore Seviye 3 yasal çerçevesini tamamladı. Mobileye EyeQ Ultra çipli yeni OEM araçlar piyasaya çıktı. Otonom kamyon denemeleri otobanlarda devam ediyor.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-year">
+                    <div class="year-badge">2027–28</div>
+                    <div>
+                        <strong>Kitlesel Seviye 3 Araçlar</strong>
+                        <p>Seviye 3 özellikler orta segment araçlara ineceği öngörülüyor. Robotaksi hizmetleri Avrupa'ya yayılmaya başlayacak. Otonom lojistik araçları kısa mesafeli teslimat için kullanımda.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-year">
+                    <div class="year-badge">2030+</div>
+                    <div>
+                        <strong>Seviye 4 Genelleşiyor</strong>
+                        <p>Büyük şehirlerde robotaksi hizmetlerinin yaygınlaşması bekleniyor. Özel araçlarda Seviye 4 özelliklerin premium segmentte standart olması hedefleniyor. Tam Seviye 5 hâlâ belirsizliğini koruyor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Otonom Sürüş Türkiye'de Nerede?</h2>
+
+            <p>Türkiye'de otonom sürüş teknolojisi henüz <strong>araştırma ve düzenleme hazırlığı</strong> aşamasında. Karayolları Genel Müdürlüğü ve Sanayi Bakanlığı, AB standartlarıyla uyumlu mevzuat çalışmaları yürütüyor. Togg, Seviye 2+ özelliklerle üretimini sürdürmekte olup 2027-2028 hedef takviminde Seviye 3 yetenekler planlanıyor.</p>
+
+            <p>İstanbul ve Ankara gibi yoğun şehir trafiğindeki karmaşıklık, Türkiye'nin otonom sürüş testleri için önemli bir <strong>stres testi ortamı</strong> oluşturduğunu gösteriyor. Yerli ve yabancı araştırma grupları bu kentlerde veri toplama çalışmaları yürütüyor.</p>
+
+            <div class="info-box">
+                <strong>🇹🇷 Türkiye Notu:</strong> TOGG, 2024 yılında imzaladığı Mobileye iş birliği anlaşmasıyla ileri sürücü destek sistemleri (ADAS) konusunda önemli adımlar attı. Bu ortaklık, gelecekte daha yüksek otonom seviyeler için zemin hazırlıyor.
+            </div>
+
+            <h2>Sonuç: Hayal mi, Gerçek mi?</h2>
+
+            <p><strong>2026 itibarıyla otonom sürüş hem hayal hem gerçek:</strong> Belirli şehirlerde ve kontrollü koşullarda Seviye 4 teknoloji çalışıyor; ancak her türlü hava koşulunda, her ülkede ve her yolda güvenilir biçimde işleyen tam otonom araçlar hâlâ uzakta.</p>
+
+            <div class="highlight-stat">
+                <span class="highlight-stat-number">2030</span>
+                <p>Analistlerin büyük çoğunluğuna göre Seviye 4'ün geniş kesimlere erişeceği yıl</p>
+            </div>
+
+            <p>Waymo'nun kanıtladığı gibi, <strong>otonom sürüş mümkün;</strong> ama ölzeklenmesi yasal, altyapısal ve ekonomik engellere takılıyor. Eğer 2026 soru işareti ise, 2030 çok daha güçlü bir cevap sunacak.</p>
+
+            <p>Türkiye açısından bakıldığında, şimdilik Seviye 2 asistan sistemleri tüketicilere ulaşmış durumda. Otonom geleceğe hazırlık için ise hem yasal altyapının hem de şehir içi haritalamanın güçlendirilmesi gerekiyor.</p>
+
+            <div class="info-box">
+                <strong>🔮 Uzman Öngörüsü:</strong> McKinsey'e göre 2030'da küresel robotaksi pazarı 200 milyar dolara yaklaşacak. Ancak tam anlamıyla "sürücüsüz toplum" için 2035-2040 takvimi daha gerçekçi görünüyor.
+            </div>
+
+            <p><strong>Siz sürücüsüz bir arabaya binmeye hazır mısınız?</strong> Otonom sürüş teknolojisindeki bu hızlı değişimi birlikte takip etmeye devam edeceğiz!</p>
+
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #eee;">
+                <p><strong>Otonom sürüş hakkında ne düşünüyorsunuz?</strong> Güvenli buluyor musunuz? Görüşlerinizi paylaşın.</p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+                    <a href="news.html" class="btn">← Tüm Haberler</a>
+                    <a href="contact.html" class="btn">Görüşlerinizi Paylaşın →</a>
+                </div>
+            </div>
+        </article>
+
+        <section style="margin-top: 4rem;">
+            <h2>İlginizi Çekebilecek Diğer Makaleler</h2>
+            <div class="grid">
+                <article class="card">
+                    <div class="card-image">🔋</div>
+                    <h3>Elektrikli Araç Bataryaları</h3>
+                    <p>2026 ve sonrası batarya teknolojileri: katı hal, grafen ve daha fazlası...</p>
+                    <a href="elektrikli-arac-bataryalari.html" class="btn">Devamını Oku</a>
+                </article>
+                <article class="card">
+                    <div class="card-image">⚡</div>
+                    <h3>Togg T10X İnceleme</h3>
+                    <p>Türkiye'nin elektrikli otomobili detaylı inceleme...</p>
+                    <a href="reviews.html" class="btn">Devamını Oku</a>
+                </article>
+                <article class="card">
+                    <div class="card-image">⛽</div>
+                    <h3>Yakıt Tasarrufu İpuçları</h3>
+                    <p>Deponuzu koruyacak 10 altın kural...</p>
+                    <a href="yakit-tasarrufu.html" class="btn">Devamını Oku</a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Atasayar Oto. Tüm hakları saklıdır.</p>
+            <p>atasayaroto.com</p>
+        </div>
+    </footer>
+</body>
+</html>
