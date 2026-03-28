@@ -1,105 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Ana Sayfa -->
   <url>
     <loc>https://atasayaroto.com/</loc>
-    <lastmod>2026-01-26</lastmod>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Statik Sayfalar -->
   <url>
-    <loc>https://atasayaroto.com/news</loc>
-    <lastmod>2026-01-25</lastmod>
+    <loc>https://atasayaroto.com/news.html</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://atasayaroto.com/2026-otomotiv-yenilikleri</loc>
-    <lastmod>2026-01-24</lastmod>
+    <loc>https://atasayaroto.com/reviews.html</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://atasayaroto.com/elektrikli-arac-bataryalari</loc>
-    <lastmod>2026-01-22</lastmod>
+    <loc>https://atasayaroto.com/tips.html</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://atasayaroto.com/contact.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Makale Sayfaları -->
+  <url>
+    <loc>https://atasayaroto.com/otonom-surus-2026.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://atasayaroto.com/otonom-surus-2026.webp</image:loc>
+      <image:title>2026'da Otonom Sürüş Teknolojisi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://atasayaroto.com/elektrikli-arac-bataryalari.html</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://atasayaroto.com/ev-batarya-gelecek.webp</image:loc>
+      <image:title>Elektrikli Araç Bataryaları Geleceği</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://atasayaroto.com/otonom-surus-teknolojisi.html</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://atasayaroto.com/otonom-surus.webp</image:loc>
+      <image:title>Otonom Sürüş Teknolojisi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://atasayaroto.com/2026-otomotiv-yenilikleri.html</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://atasayaroto.com/2026-otomotiv-yenilikler.webp</image:loc>
+      <image:title>2026 Otomotiv Yenilikleri</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://atasayaroto.com/luks-otomobil-kiralama.html</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://atasayaroto.com/luks-arac-kiralama.webp</image:loc>
+      <image:title>Lüks Otomobil Kiralama</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://atasayaroto.com/yakit-tasarrufu.html</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://atasayaroto.com/uzun-yolculuk-arac-ici-eglence.html</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://atasayaroto.com/arac-ici-eglence.webp</image:loc>
+      <image:title>Uzun Yolculukta Araç İçi Eğlence</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://atasayaroto.com/akilli-sehirler-baglantili-araclar.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://atasayaroto.com/akilli-sehir-baglantili-arac.webp</image:loc>
+      <image:title>Akıllı Şehirler ve Bağlantılı Araçlar</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://atasayaroto.com/yolculukta-mobil-oyun-dunyasi.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://atasayaroto.com/mobil-oyun-yolculuk.jpg</image:loc>
+      <image:title>Yolculukta Mobil Oyun Dünyası</image:title>
+    </image:image>
   </url>
 
   <url>
     <loc>https://atasayaroto.com/elektrikli-arac-bataryalari-gelecek.html</loc>
-    <lastmod>2026-01-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://atasayaroto.com/otonom-surus-teknolojisi</loc>
-    <lastmod>2026-01-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://atasayaroto.com/akilli-sehirler-baglantili-araclar</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://atasayaroto.com/yolculukta-mobil-oyun-dunyasi</loc>
-    <lastmod>2026-01-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://atasayaroto.com/uzun-yolculuk-arac-ici-eglence</loc>
-    <lastmod>2026-01-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://atasayaroto.com/luks-otomobil-kiralama</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://atasayaroto.com/yakit-tasarrufu</loc>
-    <lastmod>2025-12-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://atasayaroto.com/reviews</loc>
-    <lastmod>2026-01-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://atasayaroto.com/tips</loc>
-    <lastmod>2026-01-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://atasayaroto.com/mobil-oyun-yolculuk.jpg</loc>
-    <lastmod>2026-01-12</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://atasayaroto.com/contact</loc>
-    <lastmod>2025-12-15</lastmod>
+    <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
